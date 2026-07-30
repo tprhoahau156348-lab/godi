@@ -27,7 +27,14 @@ async function getSolder(req, res) {
 }
 
 async function patchSolder(req, res) {
-    res.status(501).send("not finishd yet")
+    try {
+        let result = await soldierService.editSol(req.params.soldierId, req.body)
+        if (!result) return res.status(404).send("not found")
+        res.status(200).send("updated")
+    } catch(err) {
+        console.log("eror in patch", err)
+        res.status(500).send("big eror")
+    }
 }
 
 export default {
