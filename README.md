@@ -20,7 +20,7 @@
 ```
 1 `POST /soldiers/:soldierId/benefits` - מומש במלואו
 2 `GET /soldiers/:soldierId/benefits` - מומש במלואו
-3 `PATCH /soldiers/:soldierId/benefits` -   מומש במלואו
+3 `PATCH /soldiers/:soldierId/benefits` -   מומש חלקית/במלואו, אני לא בטוח
 4 `POST /budget` - מומש במלואו
 5 `GET /budget` - מומש במלואו
 6 `GET /budget/:id/transactions` - מומש במלואו
