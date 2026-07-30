@@ -12,7 +12,14 @@ async function saveSoldier(doc) {
     await cl.insertOne(doc)
 }
 
+async function updateSoldier(id, doc) {
+    let db = mongoDb.getDb()
+    let cl = db.collection('welfare')
+    await cl.updateOne({soldierId: id}, {$set: doc})
+}
+
 export default {
     findSoldier,
-    saveSoldier
+    saveSoldier,
+    updateSoldier
 }
