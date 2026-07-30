@@ -17,7 +17,11 @@
 ```
 1 `POST /soldiers/:soldierId/benefits` - מומש
 2 `GET /soldiers/:soldierId/benefits` - מומש
-
+3 `PATCH /soldiers/:soldierId/benefits` - מומש
+4 `POST /budget` - מומש
+5 `GET /budget` - מומש
+6 `GET /budget/:id/transactions` - מומש
+7 `POST /budget/:id/spend` - מומש
 ```
 
 ## נימוק לבחירה בבסיסי נתונים
@@ -29,7 +33,10 @@
 
 ## להרצה
 
+להריץ מהתקייה הראשית
+
 ```
-npm start מהתקייה הראשית
+npm install
+npm start
 ```
 
